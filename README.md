@@ -1,16 +1,28 @@
-# React + Vite
+# Görev Takip Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React ile geliştirilmiş günlük görev ve odaklanma sayacı uygulaması.
 
-Currently, two official plugins are available:
+## Özellikler
+- Görev ekleme, düzenleme ve silme
+- Görevleri tamamlandı olarak işaretleme
+- Görevleri `localStorage` içinde saklama
+- Saat, dakika ve saniye ayarlı odaklanma sayacı
+- Başlatma, duraklatma ve sıfırlama
+- Süre bitince görsel uyarı ve sesli alarm
+- Bebek mavisi, toz pembe ve pastel renkli arayüz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Teknolojiler
+React, JavaScript, CSS, localStorage.
 
-## React Compiler
+## Kurulum
+1. Proje klasörünü VS Code ile açın.
+2. Terminalde `npm install` çalıştırın.
+3. `package.json` içindeki `scripts` bölümünden geliştirme komutunu kontrol edin.
+4. Vite kullanılıyorsa genellikle `npm run dev` ile başlatılır.
+5. Terminalde verilen yerel adresi tarayıcıda açın.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Veri saklama
+Görevler tarayıcıdaki `localStorage` alanında `tasks` anahtarıyla saklanır. Tarayıcı verileri silinirse görevler de silinebilir.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## GitHub notu
+`node_modules/`, `.env` ve gizli/kişisel veriler depoya yüklenmemelidir.
